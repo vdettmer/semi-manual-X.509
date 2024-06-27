@@ -29,9 +29,9 @@ def generate_conf(file):
       alt = csr['alt']
       os.mkdir(name)
       f = open(name+"/"+name+".conf", "w")
-      f.write('[req]\ndistinguished_name = req_distinguished_name\nreq_extensions = v3_req\nprompt = no\n\n[req_distinguished_name]\nC = '+C+'\nST = '+ST+'\nL = '+L+'\nO = '+O+'\nOU = '+OU+'\nCN = '+name+'\nemailAddress = '+emailAddress+'\n\n[v3_req]\nkeyUsage = keyEncipherment, dataEncipherment\nextendedKeyUsage = serverAuth\nsubjectAltName = @alt_names\n\n[alt_names]\n')
+      f.write('[req]\ndistinguished_name = req_distinguished_name\nreq_extensions = v3_req\nprompt = no\n\n[req_distinguished_name]\nC = '+C+'\nST = '+ST+'\nL = '+L+'\nO = '+O+'\nOU = '+OU+'\nCN = '+name+'\nemailAddress = '+emailAddress+'\n\n[v3_req]\nkeyUsage = keyEncipherment, dataEncipherment\nextendedKeyUsage = serverAuth\nsubjectAltName = @alt_names\n\n[alt_names]\nDNS.1 ='+name+'\n')
       f.close
-      i = 0
+      i = 1
       for altname in alt:
         i = i+1
         f = open(name+"/"+name+".conf", "a")
