@@ -1,0 +1,9 @@
+cn: "git.vincent.lan"
+alt:
+  - "git1.vincent.lan"
+  - "git2.vincent.lan"
+---
+cn: "ccu3.vincent.lan"
+alt:
+  - "ccu.vincent.lan"
+  - "homematic.vincent.lan"
