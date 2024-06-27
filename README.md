@@ -1,7 +1,7 @@
 Semi-manual openssl, create CSR from scratch
 =========
 
-Simple PoC script in Python to create certificate signing requests fast in an automated manner where automations like ACME are not present and CSR have still to be manually reviewed by someone responsible for the CA
+Simple PoC script in Python to create certificate signing requests fast in an automated manner where automations like ACME are not present and CSRs have still to be manually reviewed by someone responsible for the CA
 
 How to use?
 ------------
